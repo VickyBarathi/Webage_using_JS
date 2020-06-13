@@ -1,0 +1,107 @@
+<html>
+<head>
+	<title>Web page designing using HTML and CSS</title>
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="main">
+    	<nav>
+    		<div class="logo">
+    			<img src="Images/xxx.png">
+    		</div>	
+    		<div class="nav-links">
+    			<ul>
+    				<li class = "proscess" id="hmbtn"><a  href="/" target="_blank" href="#">Home</a></li>
+    				<li><a href="#">Phone</a></li>
+    				<li><a href="#">Accessories</a></li>
+    				<li><a href="#">Cart</a></li>
+                </ul>
+             </div>
+           </nav> 
+
+           <div class="information">
+
+           	<div class="overlay"></div>
+
+           	<img src="Images/kkk.jpg" class="mobile">
+            
+             <div id="circle">
+              
+               <div class="feature one">
+                    <img src="Images/aaa.png">
+                    <div>
+                    	<h1>WhatsApp</h1>
+                    	<p>Application Supported</p>
+                    </div>	
+               </div> 
+
+               <div class="feature two">
+                   <img src="Images/bbb.jpg">
+                   <div>
+                    	<h1>Proceessor</h1>
+                    	<p>Snapdragon</p>
+                    </div>
+               </div> 
+               <div class="feature three">
+                     <img src="Images/mmm.png">
+                     <div>
+                    	<h1>Display</h1>
+                    	<p>6.2inch Full HD</p>
+                    </div>
+               </div> 
+               <div class="feature four">
+                    <img src="Images/ddd.jpg">
+                    <div>
+                    	<h1>Camera</h1>
+                    	<p>12MP-Wide angle lens</p>
+                    </div>
+               </div>
+           
+              </div>
+           
+             </div>
+
+        <div class="controls" >
+        	<h3><img src="Images/ar.png" id="upbtn"></h3>
+        	 <h1>Features</h1>
+        	<h3><img src="Images/ar.png" id="downbtn"></h3> 
+        </div>	
+    </div> 
+
+
+<script type="text/javascript">
+		
+		hmbtn.onclick=function ()
+		 {  
+			var allgenders=document.getElementsByClassName('process');  
+			alert("Home Button");  
+		}  
+
+
+	 
+	 var circle=document.getElementById("circle");
+	 var upbtn=document.getElementById("upbtn");
+	 var downbtn=document.getElementById("downbtn");
+
+	 var rotate=circle.style.transform;
+	 var rotatesum;
+	 upbtn.onclick=function()
+	 {
+	 	rotatesum=rotate+"rotate(-90deg)";
+	 	circle.style.transform=rotatesum;
+	 	rotate=rotatesum;
+	 }
+	  
+	 downbtn.onclick=function()
+	 {
+	 	rotatesum=rotate+"rotate(90deg)";
+	 	circle.style.transform=rotatesum;
+	 	rotate=rotatesum;
+	 }
+	 
+	 
+</script>
+  
+
+</body>	
+</html>
